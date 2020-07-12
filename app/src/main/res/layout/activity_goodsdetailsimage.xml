@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.itfitness.ftlib.widget.goodsdetailsview.GoodsDetailsImageListView
+                android:id="@+id/activity_goodsdetailsimage_gdv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.itfitness.ftlib.widget.goodsdetailsview.GoodsDetailsImageListView>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>
