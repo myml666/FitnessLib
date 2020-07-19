@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     private void initAdapter() {
         ArrayList<String> demos = new ArrayList<>();
         demos.add("商品详情图片列表");
+        demos.add("ViewPager Indicator悬浮置顶");
+        demos.add("圆角图片");
+        demos.add("下拉刷新和上拉加载更多");
         if(mDemoAdapter == null){
             mDemoAdapter = new BaseQuickAdapter<String, BaseViewHolder>(R.layout.item_demo,demos) {
                 @Override
@@ -42,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
                         case 0:
                             //商品详情图片列表
                             JumpUtil.gotoGoodsDetailsImageActivity(MainActivity.this);
+                            break;
+                        case 1:
+                            //ViewPager上滑Indicator悬浮置顶
+                            JumpUtil.gotoViewPagerFloatActivity(MainActivity.this);
+                            break;
+                        case 2:
+                            //圆角图片
+                            JumpUtil.gotoRoundImageActivity(MainActivity.this);
+                            break;
+                        case 3:
+                            //下拉刷新和上拉加载更多
+                            JumpUtil.gotoRefreshAndLoadMore(MainActivity.this);
                             break;
                     }
                 }

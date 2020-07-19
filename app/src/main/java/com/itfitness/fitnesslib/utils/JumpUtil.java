@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.itfitness.fitnesslib.activity.GoodsDetailsImageActivity;
+import com.itfitness.fitnesslib.activity.RefreshAndLoadMore;
+import com.itfitness.fitnesslib.activity.RoundImageActivity;
+import com.itfitness.fitnesslib.activity.ViewPagerFloatActivity;
 
 /**
  * @ProjectName: FitnessLib
@@ -24,5 +27,27 @@ public class JumpUtil {
      */
     public static void gotoGoodsDetailsImageActivity(Context context){
         context.startActivity(new Intent(context, GoodsDetailsImageActivity.class));
+    }
+
+    /**
+     * 跳转ViewPager Indicator悬浮置顶
+     * @param context
+     */
+    public static void gotoViewPagerFloatActivity(Context context){
+        context.startActivity(new Intent(context, ViewPagerFloatActivity.class));
+    }
+
+    /**
+     * 圆角图片
+     * @param context
+     */
+    public static void gotoRoundImageActivity(Context context){
+        context.startActivity(new Intent(context, RoundImageActivity.class));
+    }
+    /**
+     * 下拉刷新和上拉加载更多
+     */
+    public static void gotoRefreshAndLoadMore(Context context){
+        context.startActivity(new Intent(context, RefreshAndLoadMore.class));
     }
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itfitness.ftlib.widget.scrollablelayoutlib.ScrollableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_viewpagerfloat_sl"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/activity_viewpagerfloat_header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:src="@drawable/top"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/activity_viewpagerfloat_mi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="#fff" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_viewpagerfloat_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</com.itfitness.ftlib.widget.scrollablelayoutlib.ScrollableLayout>

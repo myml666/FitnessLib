@@ -18,6 +18,12 @@
         </activity>
         <!--商品详情图片列表-->
         <activity android:name=".activity.GoodsDetailsImageActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <!--ViewPager Indicator悬浮置顶-->
+        <activity android:name=".activity.ViewPagerFloatActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <!--圆角图片-->
+        <activity android:name=".activity.RoundImageActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <!--圆角图片-->
+        <activity android:name=".activity.RefreshAndLoadMore" android:screenOrientation="portrait" android:launchMode="singleTop"/>
     </application>
 
 </manifest>
