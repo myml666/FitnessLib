@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.itfitness.fitnesslib.activity.GoodsDetailsImageActivity;
+import com.itfitness.fitnesslib.activity.IndustryActivity;
 import com.itfitness.fitnesslib.activity.RefreshAndLoadMore;
 import com.itfitness.fitnesslib.activity.RoundImageActivity;
 import com.itfitness.fitnesslib.activity.ViewPagerFloatActivity;
@@ -50,4 +51,11 @@ public class JumpUtil {
     public static void gotoRefreshAndLoadMore(Context context){
         context.startActivity(new Intent(context, RefreshAndLoadMore.class));
     }
+    /**
+     * 外卖行业入口控件
+     */
+    public static void gotoIndustryActivity(Context context){
+        context.startActivity(new Intent(context, IndustryActivity.class));
+    }
+
 }

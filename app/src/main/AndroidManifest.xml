@@ -24,6 +24,8 @@
         <activity android:name=".activity.RoundImageActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
         <!--圆角图片-->
         <activity android:name=".activity.RefreshAndLoadMore" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <!--外卖行业入口控件-->
+        <activity android:name=".activity.IndustryActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
     </application>
 
 </manifest>

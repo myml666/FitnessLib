@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         demos.add("ViewPager Indicator悬浮置顶");
         demos.add("圆角图片");
         demos.add("下拉刷新和上拉加载更多");
+        demos.add("外卖行业入口控件");
         if(mDemoAdapter == null){
             mDemoAdapter = new BaseQuickAdapter<String, BaseViewHolder>(R.layout.item_demo,demos) {
                 @Override
@@ -57,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
                         case 3:
                             //下拉刷新和上拉加载更多
                             JumpUtil.gotoRefreshAndLoadMore(MainActivity.this);
+                            break;
+                        case 4:
+                            //外卖行业入口控件
+                            JumpUtil.gotoIndustryActivity(MainActivity.this);
                             break;
                     }
                 }
