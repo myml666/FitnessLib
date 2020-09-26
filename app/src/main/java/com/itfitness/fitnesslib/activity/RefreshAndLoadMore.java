@@ -11,8 +11,9 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.itfitness.fitnesslib.R;
+import com.itfitness.fitnesslib.view.LoadMoreFooterView;
+import com.itfitness.fitnesslib.view.RefreshHeaderView;
 import com.itfitness.fitnesslib.widget.TextFooterView;
-import com.lcodecore.tkrefreshlayout.Footer.LoadingView;
 import com.lcodecore.tkrefreshlayout.RefreshListenerAdapter;
 import com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout;
 import com.lcodecore.tkrefreshlayout.header.SinaRefreshView;
@@ -45,14 +46,14 @@ public class RefreshAndLoadMore extends AppCompatActivity {
     }
 
     private void initListener() {
-        SinaRefreshView headerView = new SinaRefreshView(this);
+        RefreshHeaderView headerView = new RefreshHeaderView(this);
 //        headerView.setArrowResource(R.drawable.arrow);
         headerView.setTextColor(0xff745D5C);
 //        TextHeaderView headerView = (TextHeaderView) View.inflate(this,R.layout.header_tv,null);
         mRefreshLayout.setHeaderView(headerView);
-
         TextFooterView loadingView = new TextFooterView(this);
-        mRefreshLayout.setBottomView(loadingView);
+        mRefreshLayout.setBottomView(new LoadMoreFooterView(this));
+        mRefreshLayout.setBottomHeight(80);
         mRefreshLayout.setOnRefreshListener(new RefreshListenerAdapter() {
             @Override
             public void onRefresh(final TwinklingRefreshLayout refreshLayout) {
