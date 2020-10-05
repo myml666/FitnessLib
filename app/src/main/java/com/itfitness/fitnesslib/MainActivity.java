@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         demos.add("下拉刷新和上拉加载更多");
         demos.add("外卖行业入口控件");
         demos.add("美团搜索动画");
+        demos.add("美团详情图片联动");
         if(mDemoAdapter == null){
             mDemoAdapter = new BaseQuickAdapter<String, BaseViewHolder>(R.layout.item_demo,demos) {
                 @Override
@@ -67,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
                         case 5:
                             //仿美团搜索动画
                             JumpUtil.gotoMeiTuanSearchActivity(MainActivity.this);
+                            break;
+                        case 6:
+                            //美团详情图片联动
+                            JumpUtil.gotoMeiTuanImageScroll(MainActivity.this);
                             break;
                     }
                 }

@@ -14,7 +14,7 @@
             android:src="@drawable/top"
             android:scaleType="fitXY"
             android:layout_width="match_parent"
-            android:layout_height="800dp" />
+            android:layout_height="200dp" />
     </LinearLayout>
     <net.lucode.hackware.magicindicator.MagicIndicator
         android:id="@+id/activity_viewpagerfloat_mi"

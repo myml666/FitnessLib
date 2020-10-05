@@ -83,7 +83,14 @@ public class ScrollableHelper {
         if (scrollableView instanceof WebView) {
             return isWebViewTop((WebView) scrollableView);
         }
+        if (scrollableView instanceof ScrollableLayout) {
+            return isScrollableLayoutTop((ScrollableLayout) scrollableView);
+        }
         throw new IllegalStateException("scrollableView must be a instance of AdapterView|ScrollView|RecyclerView");
+    }
+
+    private boolean isScrollableLayoutTop(ScrollableLayout scrollableView) {
+        return scrollableView.isHeadTop();
     }
 
     private static boolean isRecyclerViewTop(RecyclerView recyclerView) {

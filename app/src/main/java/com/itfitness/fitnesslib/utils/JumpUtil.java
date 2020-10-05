@@ -3,7 +3,9 @@ package com.itfitness.fitnesslib.utils;
 import android.content.Context;
 import android.content.Intent;
 
+import com.itfitness.fitnesslib.MainActivity;
 import com.itfitness.fitnesslib.activity.GoodsDetailsImageActivity;
+import com.itfitness.fitnesslib.activity.ImageScrollActivity;
 import com.itfitness.fitnesslib.activity.IndustryActivity;
 import com.itfitness.fitnesslib.activity.MeiTuanSearchAnimActivity;
 import com.itfitness.fitnesslib.activity.RefreshAndLoadMore;
@@ -65,5 +67,12 @@ public class JumpUtil {
      */
     public static void gotoMeiTuanSearchActivity(Context context){
         context.startActivity(new Intent(context, MeiTuanSearchAnimActivity.class));
+    }
+
+    /**
+     * 美团详情图片联动
+     */
+    public static void gotoMeiTuanImageScroll(Context context) {
+        context.startActivity(new Intent(context, ImageScrollActivity.class));
     }
 }
